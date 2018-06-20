@@ -1,8 +1,7 @@
-
 {
   "name": "react-native-tone",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Simple library for playing tones in React Native (iOS only).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +9,9 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "Olivia Chang",
+  "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-
+    "react-native": "^0.41.2"
   }
 }
