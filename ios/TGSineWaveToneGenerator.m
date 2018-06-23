@@ -88,7 +88,7 @@ OSStatus RenderTone(
     return self;
 }
 
-- (id)initWithChannels:(UInt32)size {
+- (id)initWithChannels:(UInt32)size amplitude:(double)volume {
     if (self = [super init]) {
         _numChannels = size;
         _channels = calloc(sizeof(TGChannelInfo), _numChannels);
@@ -96,7 +96,7 @@ OSStatus RenderTone(
         
         for (size_t i = 0; i < _numChannels; i++) {
             _channels[i].frequency = SINE_WAVE_TONE_GENERATOR_FREQUENCY_DEFAULT / ( i + 0.4);//Just because
-            _channels[i].amplitude = SINE_WAVE_TONE_GENERATOR_AMPLITUDE_DEFAULT;
+            _channels[i].amplitude = volume;
         }
         _sampleRate = SINE_WAVE_TONE_GENERATOR_SAMPLE_RATE_DEFAULT;
         [self _setupAudioSession];

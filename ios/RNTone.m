@@ -12,17 +12,34 @@
     return dispatch_get_main_queue();
 }
 RCT_EXPORT_MODULE()
-RCT_EXPORT_METHOD(start)
+
+RCT_EXPORT_METHOD(initWithChannels:(NSInteger)numChannels amplitude:(double)volume)
 {
-	_generator = [[TGSineWaveToneGenerator alloc] initWithChannels:1];
+	_generator = [[TGSineWaveToneGenerator alloc] initWithChannels:numChannels amplitude:volume];
 }
-RCT_EXPORT_METHOD(startTone:(NSInteger)frequency)
+
+RCT_EXPORT_METHOD(setChannelFrequencies:(NSArray*)frequencies)
 {
-    _generator->_channels[0].frequency = frequency;
+	int count = 0;
+	// for (NSObject* o in frequencies)
+	for (id object in frequencies)
+	{
+	    _generator->_channels[count].frequency = [object doubleValue];
+	    count++;
+	}
+}
+
+RCT_EXPORT_METHOD(play)
+{
+    // _generator->_channels[0].frequency = frequency;
     [_generator play];
 }
 
-RCT_EXPORT_METHOD(stopTone)
+RCT_EXPORT_METHOD(playForDuration:(NSTimeInterval)time) {
+	[_generator playForDuration:time];
+}
+
+RCT_EXPORT_METHOD(stop)
 {
     [_generator stop];
 }

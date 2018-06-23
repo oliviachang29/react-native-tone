@@ -21,7 +21,6 @@
 @import AudioToolbox;
 @import AVFoundation;
 
-
 #define SINE_WAVE_TONE_GENERATOR_FREQUENCY_DEFAULT 440.0f
 
 #define SINE_WAVE_TONE_GENERATOR_SAMPLE_RATE_DEFAULT 44100.0f
@@ -46,7 +45,7 @@ typedef struct {
     UInt32 _numChannels;
 }
 
-- (id)initWithChannels:(UInt32)size;
+- (id)initWithChannels:(UInt32)size amplitude:(double)volume;
 - (id)initWithFrequency:(double)hertz amplitude:(double)volume;
 - (void)playForDuration:(NSTimeInterval)time;
 - (void)play;
