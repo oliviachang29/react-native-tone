@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = ""
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "author" => "author@domain.cn" }
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.author             = { "author" => "hello@oliviachang.me" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNTone.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/oliviachang29/react-native-tone.git", :tag => "master" }
   s.source_files  = "RNTone/**/*.{h,m}"
   s.requires_arc = true
 

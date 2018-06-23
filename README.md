@@ -1,5 +1,5 @@
 
-# react-native-tone
+# react-native-tone 🎶
 Simple library for playing tones in React Native (iOS only). Bridge of https://github.com/picciano/iOS-Tone-Generator
 
 Disclaimer: I'm totally new to Obj-C and bridging. If anyone would like to help with this module they are welcome.
@@ -11,6 +11,9 @@ Disclaimer: I'm totally new to Obj-C and bridging. If anyone would like to help 
 `$ react-native link react-native-tone`
 
 ## Usage
+
+Generates simple sine wave, specify a frequency and amplitude. Play sound indefinitely or for a specified time interval.
+
 ```
 import RNTone from 'react-native-tone';
 
@@ -18,8 +21,8 @@ import RNTone from 'react-native-tone';
 RNTone.initWithChannels(numChannels, volume) // initalize
 // volume ranges from 0.01-0.25
 
-RNTone.play() // start tone, indefinitely
-RNTone.playForDuration(seconds) // start then stop tone for specified time interval (in seconds)
+RNTone.play() // play tone, indefinitely
+RNTone.playForDuration(seconds) // play specified time interval (in seconds)
 RNTone.stop() // stop tone
 
 // Example

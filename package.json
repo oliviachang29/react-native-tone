@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "description": "Simple library for playing tones in React Native (iOS only).",
   "main": "index.js",
+  "homepage": "https://github.com/oliviachang29/react-native-tone",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
