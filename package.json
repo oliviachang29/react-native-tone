@@ -1,6 +1,6 @@
 {
   "name": "react-native-tone",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple library for playing tones in React Native (iOS only).",
   "main": "index.js",
   "scripts": {
