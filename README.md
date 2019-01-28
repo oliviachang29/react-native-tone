@@ -4,9 +4,17 @@ Simple library for playing tones in React Native (iOS only). Bridge of https://g
 
 ## Getting started
 
-`$ yarn add react-native-tone` or `$ npm install react-native-tone --save`
+```
+yarn add react-native-tone
 
-`$ react-native link react-native-tone`
+or
+
+npm install react-native-tone --save
+```
+
+```
+react-native link react-native-tone
+```
 
 ## Usage
 
