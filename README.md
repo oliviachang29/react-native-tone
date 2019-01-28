@@ -2,8 +2,6 @@
 # react-native-tone 🎶
 Simple library for playing tones in React Native (iOS only). Bridge of https://github.com/picciano/iOS-Tone-Generator
 
-Disclaimer: I'm totally new to Obj-C and bridging. If anyone would like to help with this module they are welcome.
-
 ## Getting started
 
 `$ yarn add react-native-tone` or `$ npm install react-native-tone --save`
@@ -33,3 +31,5 @@ RNTone.playForDuration(0.5) // play for half a second
 
 ## Todo
 * Remove clicking sound at beginning and end of tone
+
+P.S. I'm still still learning Obj-C and bridging, so if anyone would like to help with this module they are very welcome!
