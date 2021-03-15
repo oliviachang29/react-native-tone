@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNTone
                    DESC
-  s.homepage     = "https://www.oliviachang.me/"
+  s.homepage     = "https://github.com/oliviachang29/react-native-tone"
   s.license      = "MIT"
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "hello@oliviachang.me" }
