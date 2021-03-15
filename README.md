@@ -2,6 +2,8 @@
 # react-native-tone 🎶
 Simple library for playing tones in React Native (iOS only). Bridge of https://github.com/picciano/iOS-Tone-Generator
 
+⚠️ Note: this library is **not actively maintained.**
+
 ## Getting started
 
 ```
